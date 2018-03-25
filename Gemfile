@@ -48,6 +48,7 @@ gem 'react-rails', '~> 1.0'
 # gem 'passenger'
 
 # Use Capistrano for deployment
+gem 'capistrano', '~> 2.15'
 # gem 'capistrano-rails', group: :development
 
 # Use debugger
@@ -109,8 +110,8 @@ group :test, :development do
   gem 'git'
 
   ## Deploy with Capistrano
-  gem 'capistrano', '~> 2.15.5'
-  gem 'capistrano-ext', '~> 1.2.1'
+ gem "capistrano", "~> 3.10", require: false
+  gem "capistrano-rails", "~> 1.3", require: false
 end
 
 gem 'memory_test_fix'
